@@ -42,7 +42,7 @@ GROUP BY Localizacao_Evento
 ORDER BY Contagem_Colaboracoes DESC;
 Código gerado por IA. Examine e use com cuidado. Mais informações em perguntas frequentes.
 Avaliação Média por Localização do Laboratório de Inovação:
-
+```
 SQL
 
 SELECT Localizacao_Evento, AVG(Avaliacao_Colaboracao) as Avaliacao_Media 
@@ -66,7 +66,7 @@ JOIN tb_Projeto_e_Desafio ON tb_Colaboracao.ID_Projeto = tb_Projeto_e_Desafio.ID
 JOIN tb_Laboratorio_Inovacao ON tb_Projeto_e_Desafio.ID = tb_Laboratorio_Inovacao.ID 
 GROUP BY Projeto, Localizacao_Evento 
 ORDER BY Contagem_Colaboracoes DESC;
-
+-
 ## Como Contribuir
 
 - `Sinta-se à vontade para sugerir melhorias, relatar bugs ou contribuir com código. Abra um problema ou envie uma solicitação pull para contribuir para o desenvolvimento do Banco de Dados da Rede Neural Social.`
