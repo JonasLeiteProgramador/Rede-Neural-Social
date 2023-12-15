@@ -34,7 +34,7 @@ O banco de dados é composto por várias tabelas interconectadas:
 ## Principais Consultas
 
 3. **Distribuição de Avaliações por Habilidade Mental e Localização do Laboratório:**
-   ```sql
+   `sql
    SELECT Descricao AS HabilidadeMental, Localizacao_Evento, Avaliacao_Colaboracao, COUNT(ID_Colaboracao) as Contagem_Colaboracoes
    FROM tb_Conexao_Habilidades
    JOIN tb_Colaboracao ON tb_Conexao_Habilidades.ID_Colaboracao = tb_Colaboracao.ID
@@ -45,8 +45,9 @@ O banco de dados é composto por várias tabelas interconectadas:
    ORDER BY HabilidadeMental, Avaliacao_Colaboracao;
 Contagem de Colaborações por Localização do Laboratório de Inovação:
 
-sql
-Copy code
+# Contagem de Colaborações por Localização do Laboratório de Inovação:
+
+`
 SELECT Localizacao_Evento, COUNT(ID_Colaboracao) as Contagem_Colaboracoes
 FROM tb_Laboratorio_Inovacao
 JOIN tb_Projeto_e_Desafio ON tb_Laboratorio_Inovacao.ID = tb_Projeto_e_Desafio.ID
@@ -54,7 +55,6 @@ JOIN tb_Colaboracao ON tb_Projeto_e_Desafio.ID = tb_Colaboracao.ID_Projeto
 GROUP BY Localizacao_Evento
 ORDER BY Contagem_Colaboracoes DESC;
 Avaliação Média por Localização do Laboratório de Inovação:
-
 sql
 Copy code
 SELECT Localizacao_Evento, AVG(Avaliacao_Colaboracao) as Avaliacao_Media
@@ -64,8 +64,8 @@ JOIN tb_Colaboracao ON tb_Projeto_e_Desafio.ID = tb_Colaboracao.ID_Projeto
 GROUP BY Localizacao_Evento
 ORDER BY Avaliacao_Media DESC;
 Contagem de Colaborações por Projeto e Localização do Laboratório de Inovação:
-
-
+sql
+Copy code
 SELECT Projeto, Localizacao_Evento, COUNT(ID_Colaboracao) as Contagem_Colaboracoes
 FROM tb_Colaboracao
 JOIN tb_Projeto_e_Desafio ON tb_Colaboracao.ID_Projeto = tb_Projeto_e_Desafio.ID
@@ -75,6 +75,7 @@ ORDER BY Contagem_Colaboracoes DESC;
 Como Contribuir
 Sinta-se à vontade para sugerir melhorias, relatar bugs ou contribuir com código. Abra um problema ou envie uma solicitação pull para contribuir para o desenvolvimento do Banco de Dados da Rede Neural Social.
 
-CRIADO POR: Jonas Leite,Maria Francielly,Gabriel Gaspar,Sthefanie,Marcos
 Licença
 Este projeto é licenciado sob a Licença MIT.
+
+CRIADO POR: Jonas Leite, Maria Francielly, Gabriel Gaspar, Sthefanie, Marcos
