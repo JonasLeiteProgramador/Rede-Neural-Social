@@ -41,7 +41,7 @@
 
 # Principais Consultas:
 
-##Distribuição de Avaliações por Habilidade Mental e Localização do Laboratório
+- **Distribuição de Avaliações por Habilidade Mental e Localização do Laboratório**
 
 ##Contagem de Colaborações por Projeto e Localização do Laboratório de Inovação
 -**Contagem de Colaborações por Localização do Laboratório de Inovação**
