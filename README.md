@@ -31,7 +31,7 @@
 
 # Como Contribuir 
 
-** -Sinta-se à vontade para sugerir melhorias, relatar bugs ou contribuir com código. Abra um problema ou envie uma solicitação pull para contribuir para o desenvolvimento do Banco de Dados da Rede Neural Social.**
+**Sinta-se à vontade para sugerir melhorias, relatar bugs ou contribuir com código. Abra um problema ou envie uma solicitação pull para contribuir para o desenvolvimento do Banco de Dados da Rede Neural Social.**
 
 ## CRIADO POR: Jonas Leite, Maria Francielly, Gabriel Gaspar, Sthefanie, Marcos**
 
