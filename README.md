@@ -33,7 +33,8 @@
 
 **Sinta-se à vontade para sugerir melhorias, relatar bugs ou contribuir com código. Abra um problema ou envie uma solicitação pull para contribuir para o desenvolvimento do Banco de Dados da Rede Neural Social.**
 
-## CRIADO POR: Jonas Leite, Maria Francielly, Gabriel Gaspar, Sthefanie, Marcos**
+# CRIADO POR: 
+**Jonas Leite, Maria Francielly, Gabriel Gaspar, Sthefanie, Marcos**
 
 ## Licença: Este projeto é licenciado sob a Licença MIT.
 
