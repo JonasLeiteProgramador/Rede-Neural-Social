@@ -1,0 +1,8 @@
+SELECT tb_habilidade_mental.Descricao AS HabilidadeMental, tb_Laboratorio_Inovacao.Localizacao_Evento, tb_Colaboracao.Avaliacao_Colaboracao, COUNT(tb_Colaboracao.ID) as Contagem_Colaboracoes
+FROM tb_Conexao_Habilidades
+JOIN tb_Colaboracao ON tb_Conexao_Habilidades.ID_Colaboracao = tb_Colaboracao.ID
+JOIN tb_habilidade_mental ON tb_Conexao_Habilidades.ID_HabilidadeMental = tb_habilidade_mental.ID
+JOIN tb_Projeto_e_Desafio ON tb_Colaboracao.ID_Projeto = tb_Projeto_e_Desafio.ID
+JOIN tb_Laboratorio_Inovacao ON tb_Projeto_e_Desafio.ID = tb_Laboratorio_Inovacao.ID
+GROUP BY HabilidadeMental, tb_Laboratorio_Inovacao.Localizacao_Evento, tb_Colaboracao.Avaliacao_Colaboracao
+ORDER BY HabilidadeMental, tb_Colaboracao.Avaliacao_Colaboracao;
