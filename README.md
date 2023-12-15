@@ -44,8 +44,7 @@
 ##Distribuição de Avaliações por Habilidade Mental e Localização do Laboratório
 
 ##Contagem de Colaborações por Projeto e Localização do Laboratório de Inovação
-
-##Contagem de Colaborações por Localização do Laboratório de Inovação**
+-**Contagem de Colaborações por Localização do Laboratório de Inovação**
 
 ```sql
 SELECT Descricao AS HabilidadeMental, Localizacao_Evento, Avaliacao_Colaboracao, COUNT(ID_Colaboracao) as Contagem_Colaboracoes
