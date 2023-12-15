@@ -46,6 +46,7 @@
 - **Contagem de Colaborações por Projeto e Localização do Laboratório de Inovação**
 
 - **Contagem de Colaborações por Localização do Laboratório de Inovação**
+-  **Avaliação Média por Localização do Laboratório de Inovação**
 
 ```sql
 SELECT Descricao AS HabilidadeMental, Localizacao_Evento, Avaliacao_Colaboracao, COUNT(ID_Colaboracao) as Contagem_Colaboracoes
@@ -64,7 +65,7 @@ JOIN tb_Projeto_e_Desafio ON tb_Laboratorio_Inovacao.ID = tb_Projeto_e_Desafio.I
 JOIN tb_Colaboracao ON tb_Projeto_e_Desafio.ID = tb_Colaboracao.ID_Projeto
 GROUP BY Localizacao_Evento
 ORDER BY Contagem_Colaboracoes DESC;
-Avaliação Média por Localização do Laboratório de Inovação:
+
 
 
 SELECT Localizacao_Evento, AVG(Avaliacao_Colaboracao) as Avaliacao_Media
