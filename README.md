@@ -5,10 +5,27 @@
 
 
 
+- **tb_Usuario (Usuário):**
+  - Armazena informações sobre usuários, incluindo nome, e-mail, profissão, habilidades neurais e detalhes de conexão.
+  
+- **tb_habilidade_mental (Habilidades Mentais):**
+  - Mantém informações sobre habilidades mentais, incluindo descrições, áreas de conhecimento e níveis de proficiência.
+  
+- **tb_Projeto_e_Desafio (Projeto/Desafio):**
+  - Registra detalhes sobre projetos/desafios, como descrições, áreas de habilidades necessárias, níveis de dificuldade, prazos e soluções propostas.
+  
+- **tb_Colaboracao (Colaboração):**
+  - Rastreia colaborações entre usuários e projetos, documentando habilidades contribuídas, datas de colaboração e avaliações.
+  
+- **tb_Feedback:**
+  - Armazena feedback relacionado a colaborações, incluindo avaliações e comentários.
+  
 - **tb_Laboratorio_Inovacao (Laboratório de Inovação):**
   - Contém informações sobre laboratórios de inovação, incluindo localizações, propósitos, tópicos abordados e métodos de sincronização mental.
+  
 - **tb_Conexao_Habilidades (Conexão de Habilidades):**
-  - Estabelece conexões entre colaborações e habilidades mentais.
+- Estabelece conexões entre colaborações e habilidades mentais.
+
 
 
 
@@ -16,9 +33,9 @@
 
 # Sinta-se à vontade para sugerir melhorias, relatar bugs ou contribuir com código. Abra um problema ou envie uma solicitação pull para contribuir para o desenvolvimento do Banco de Dados da Rede Neural Social.
 
-- **CRIADO POR: Jonas Leite, Maria Francielly, Gabriel Gaspar, Sthefanie, Marcos**
+# CRIADO POR: Jonas Leite, Maria Francielly, Gabriel Gaspar, Sthefanie, Marcos**
 
-Licença: Este projeto é licenciado sob a Licença MIT.
+# Licença: Este projeto é licenciado sob a Licença MIT.
 
 ## Principais Consultas:
 
