@@ -18,8 +18,8 @@ O banco de dados é composto por várias tabelas interconectadas:
 
 ## Principais Consultas
 
-Distribuição de Avaliações por Habilidade Mental e Localização do Laboratório:
-
+## Distribuição de Avaliações por Habilidade Mental e Localização do Laboratório:
+```sql
 SQL
 -SELECT Descricao AS HabilidadeMental, Localizacao_Evento, Avaliacao_Colaboracao, COUNT(ID_Colaboracao) as Contagem_Colaboracoes
 FROM tb_Conexao_Habilidades
@@ -33,7 +33,7 @@ ORDER BY HabilidadeMental, Avaliacao_Colaboracao;
 ## Contagem de Colaborações por Localização do Laboratório de Inovação:
 
 SQL
-
+```sql
 SELECT Localizacao_Evento, COUNT(ID_Colaboracao) as Contagem_Colaboracoes 
 FROM tb_Laboratorio_Inovacao 
 JOIN tb_Projeto_e_Desafio ON tb_Laboratorio_Inovacao.ID = tb_Projeto_e_Desafio.ID 
